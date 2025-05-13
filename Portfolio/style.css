@@ -28,7 +28,11 @@ body{ /* styling the <body> </body> part of index.html  */
 .logo{
     font-size: 25px;
     color: white;
-
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a{
@@ -36,8 +40,10 @@ body{ /* styling the <body> </body> part of index.html  */
     color: white;
     text-decoration: none;
     font-weight: 500;
+    margin-left: 25px;
     transition: .3s;
-
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
 }
 
 .navbar a:hover{
@@ -66,9 +72,60 @@ body{ /* styling the <body> </body> part of index.html  */
 }
 
 .home-content h3{
-    
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h3 span{
+    color:rgb(40,137,158);
+}
+
+.home-content p{
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .home-img img{
     max-width: 450px;
+    margin-right: -20px;
+}
+
+social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(87, 199, 199);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(40, 137, 158);
+    text-decoration: none;
+    box-shadow: 0 0 20px rgb(70, 156, 156);
+    margin: 30px 14px 30px 0;
+    transition: .5s ease;
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 28px;    
+    background-color: rgb(40,137,158);
+    border-radius: 40px;
+    box-shadow: 0 0 10px 0;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
