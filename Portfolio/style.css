@@ -116,13 +116,22 @@ body{ /* styling the <body> </body> part of index.html  */
     animation-delay: 1s;
 }
 
-.home-img img{
-    max-width: 450px;
-    margin-right: -20px;
+.home-img {
+    transform: translateX(-80px) translateY(-10px);
+}
+
+.home-img img {
+    width: 280px;           /* Increase from 200px */
+    height: 280px; 
+    border-radius: 70%;
+    object-fit: cover;
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 1s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .social-media a{
     display: inline-flex;
